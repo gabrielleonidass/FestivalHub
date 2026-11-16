@@ -43,7 +43,7 @@ public class RelatorioDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 System.out.printf("%-22s %-14s %s%n", "Artista", "Genero", "Shows");
                 while (rs.next()) {
-                    System.out.printf("%-22s %-14s %d%n", rs.getString(1), rs.getString(2), rs.getInt(3))
+                    System.out.printf("%-22s %-14s %d%n", rs.getString(1), rs.getString(2), rs.getInt(3));
                 }
             }
         }
